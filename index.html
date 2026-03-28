@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>WOW Hair Beauty Center Algeria — Cezayir'in İlk Türk Güzellik Merkezi</title>
+<meta name="description" content="WOW Hair Beauty Center Algeria — Cezayir'in ilk Türk güzellik merkezi. Saç, bakım, tırnak ve estetik hizmetleri Tixeraïne, Cezayir'de.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Lato:wght@300;400;700;900&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+
+:root{
+  --gold:#C9A96E;--gold-l:#E4C99A;--gold-d:#A8813F;
+  --ivory:#FDF6EE;--ivory2:#F5EAD8;
+  --rose:#F2D4CE;--rose2:#E8B8AD;
+  --char:#1C1C1C;--char2:#2A2A2A;--char3:#363636;
+  --smoke:#FAFAFA;
+  --tx:#2C2C2C;--txm:#7A6A5A;--txl:#B0A090;
+  --ff:'Cormorant Garamond',Georgia,serif;
+  --fs:'DM Sans',sans-serif;
+  --ease:cubic-bezier(.25,.46,.45,.94);
+  --t:all .4s var(--ease);
+  --sh1:0 8px 40px rgba(201,169,110,.12);
+  --sh2:0 4px 24px rgba(0,0,0,.08);
+  --sh3:0 20px 60px rgba(201,169,110,.25);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--fs);background:var(--ivory);color:var(--tx);overflow-x:hidden;line-height:1.7}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* Typography */
+.h-xl{font-family:var(--ff);font-size:clamp(3rem,6.5vw,6rem);font-weight:300;line-height:1.05;letter-spacing:-.015em}
+.h-lg{font-family:var(--ff);font-size:clamp(2rem,4vw,3.6rem);font-weight:400;line-height:1.12}
+.h-md{font-family:var(--ff);font-size:clamp(1.5rem,2.5vw,2.2rem);font-weight:400;line-height:1.2}
+.lbl{font-size:.7rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.gold-bar{width:48px;height:1px;background:var(--gold);margin:16px 0}
+.gold-bar.c{margin:16px auto}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 32px;font-family:var(--fs);font-size:.82rem;font-weight:500;letter-spacing:.09em;text-transform:uppercase;border:none;cursor:pointer;transition:var(--t);position:relative;overflow:hidden;border-radius:2px;white-space:nowrap}
+.btn-g{background:var(--gold);color:#fff;box-shadow:0 4px 20px rgba(201,169,110,.35)}
+.btn-g::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);transition:left .55s ease}
+.btn-g:hover::before{left:100%}
+.btn-g:hover{background:var(--gold-d);transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,169,110,.5)}
+.btn-o{background:transparent;color:var(--gold);border:1.5px solid var(--gold)}
+.btn-o:hover{background:var(--gold);color:#fff;transform:translateY(-2px)}
+.btn-w{background:#fff;color:var(--char);box-shadow:var(--sh2)}
+.btn-w:hover{background:var(--ivory2);transform:translateY(-2px)}
+.btn-dk{background:var(--char);color:#fff}
+.btn-dk:hover{background:var(--char3);transform:translateY(-2px)}
+
+/* Reveal anims */
+.rev{opacity:0;transform:translateY(28px);transition:opacity .85s var(--ease),transform .85s var(--ease)}
+.rev.in{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+.d4{transition-delay:.4s}.d5{transition-delay:.5s}.d6{transition-delay:.6s}
+
+/* ===== NAVBAR ===== */
+#nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:22px 0;transition:var(--t)}
+#nav.sc{background:rgba(253,246,238,.93);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:14px 0;box-shadow:0 1px 0 rgba(201,169,110,.2),0 4px 24px rgba(0,0,0,.07)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:var(--ff);font-size:1.75rem;font-weight:600;color:var(--char);letter-spacing:.04em;position:relative;cursor:pointer;white-space:nowrap;flex-shrink:0}
+.logo span{color:var(--gold)}
+.logo::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:1px;background:var(--gold)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--char);transition:color .3s;position:relative;cursor:pointer}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--gold);transition:width .3s}
+.nav-links a:hover{color:var(--gold)}
+.nav-links a:hover::after{width:100%}
+.nav-r{display:flex;align-items:center;gap:14px;flex-shrink:0}
+.lang-tog{display:flex;border:1px solid rgba(201,169,110,.3);border-radius:20px;overflow:hidden}
+.lb{padding:6px 11px;cursor:pointer;transition:var(--t);border:none;background:transparent;font-family:var(--fs);font-size:.7rem;font-weight:600;letter-spacing:.08em;color:var(--txm)}
+.lb.on{background:var(--gold);color:#fff}
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.ham span{display:block;width:24px;height:1.5px;background:var(--char);transition:var(--t)}
+.mob{display:none;position:fixed;inset:0;background:var(--ivory);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:28px}
+.mob.open{display:flex}
+.mob a,.mob button{font-family:var(--ff);font-size:2rem;font-weight:400;color:var(--char);cursor:pointer;background:none;border:none;transition:color .3s}
+.mob a:hover,.mob button:hover{color:var(--gold)}
+.mob-x{position:absolute;top:24px;right:24px;font-size:1.5rem;cursor:pointer;color:var(--char);background:none;border:none}
+
+/* ===== HERO ===== */
+#hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:
+  radial-gradient(ellipse 70% 55% at 75% 38%,rgba(242,212,206,.5) 0%,transparent 60%),
+  radial-gradient(ellipse 50% 70% at 15% 75%,rgba(201,169,110,.1) 0%,transparent 55%),
+  linear-gradient(160deg,#fdf6ee 0%,#f5ead8 60%,#fdf6ee 100%)}
+.hero-img{position:absolute;right:0;top:0;width:54%;height:100%;overflow:hidden}
+/* HERO BACKGROUND IMAGE - Replace with your desired hero image path */
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:center 20%;mix-blend-mode:multiply;opacity:.38;filter:sepia(12%) saturate(82%) brightness(1.05)}
+.hero-img::before{content:'';position:absolute;inset:0;background:linear-gradient(to right,#fdf6ee 0%,rgba(253,246,238,.6) 30%,transparent 65%);z-index:1}
+.hero-img::after{content:'';position:absolute;bottom:0;left:0;right:0;height:30%;background:linear-gradient(to top,#fdf6ee,transparent);z-index:1}
+.hero-ct{position:relative;z-index:2;max-width:660px}
+.h-badge{display:inline-flex;align-items:center;gap:9px;padding:7px 18px;border:1px solid rgba(201,169,110,.4);border-radius:24px;font-size:.7rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-d);background:rgba(201,169,110,.06);margin-bottom:30px;animation:fadeUp 1.1s .1s both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(36px)}to{opacity:1;transform:translateY(0)}}
+.hero-h1{animation:fadeUp 1.1s .22s both;color:var(--char);margin-bottom:10px}
+.hero-h1 em{color:var(--gold);font-style:italic}
+.hero-sub{font-family:var(--ff);font-size:clamp(1rem,1.8vw,1.25rem);font-weight:300;font-style:italic;color:var(--txm);margin-bottom:38px;animation:fadeUp 1.1s .35s both}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;animation:fadeUp 1.1s .48s both}
+.hero-scroll{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--txl);font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;animation:fadeUp 1.1s .7s both;z-index:2;cursor:pointer}
+.arr-d{width:18px;height:18px;border-right:1px solid var(--gold);border-bottom:1px solid var(--gold);transform:rotate(45deg);animation:bounce 2s ease-in-out infinite}
+@keyframes bounce{0%,100%{transform:rotate(45deg) translateY(0);opacity:.7}50%{transform:rotate(45deg) translateY(7px);opacity:1}}
+
+/* ===== TRUST STRIP ===== */
+#trust{background:var(--char);padding:18px 0}
+.trust-in{display:flex;justify-content:center;align-items:center;flex-wrap:wrap}
+.tbadge{display:flex;align-items:center;gap:8px;padding:8px 26px;font-size:.7rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-l);border-right:1px solid rgba(201,169,110,.2);white-space:nowrap}
+.tbadge:last-child{border-right:none}
+.tbadge i{color:var(--gold);font-size:.72rem}
+
+/* ===== ABOUT ===== */
+#about{padding:130px 0;overflow:hidden}
+.about-g{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-img-col{position:relative}
+.about-main-img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px;box-shadow:var(--sh1)}
+/* ABOUT MAIN IMAGE - Replace with your about section main image */
+.about-accent-img{position:absolute;bottom:-36px;right:-36px;width:48%;aspect-ratio:1;object-fit:cover;border-radius:4px;border:7px solid var(--ivory);box-shadow:var(--sh2)}
+/* ABOUT ACCENT IMAGE (overlay) - Replace with your accent image */
+.wm{position:absolute;top:-10px;left:-24px;font-family:var(--ff);font-size:20rem;font-weight:700;color:rgba(201,169,110,.04);line-height:1;user-select:none;pointer-events:none}
+.about-quote{margin:28px 0;padding:22px 26px;border-left:2px solid var(--gold);background:linear-gradient(to right,rgba(201,169,110,.07),transparent)}
+.about-quote p{font-family:var(--ff);font-size:1.15rem;font-style:italic;font-weight:400;color:var(--tx);line-height:1.65}
+.about-body{color:var(--txm);font-size:.94rem;line-height:1.9;margin-bottom:14px}
+.about-flags{display:flex;align-items:center;gap:8px;margin-top:26px;font-size:.73rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--txl)}
+
+/* ===== SERVICES ===== */
+#services{padding:130px 0;background:var(--smoke);position:relative}
+#services::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 90% 60% at 50% 0%,rgba(242,212,206,.22) 0%,transparent 65%);pointer-events:none}
+.sec-hd{text-align:center;margin-bottom:60px}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.svc-card{background:#fff;border-radius:8px;border:1px solid rgba(201,169,110,.1);transition:var(--t);overflow:hidden;cursor:pointer;position:relative}
+.svc-card:hover{transform:translateY(-7px);box-shadow:var(--sh3);border-color:rgba(201,169,110,.35)}
+.svc-img-wrap{overflow:hidden;height:210px;position:relative}
+.svc-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.svc-card:hover .svc-img-wrap img{transform:scale(1.06)}
+.svc-img-wrap::after{content:'';position:absolute;bottom:0;left:0;right:0;height:50%;background:linear-gradient(to top,rgba(253,246,238,.6),transparent)}
+.svc-body{padding:26px 24px}
+.svc-icon{width:42px;height:42px;background:linear-gradient(135deg,rgba(201,169,110,.13),rgba(201,169,110,.05));border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:14px;border:1px solid rgba(201,169,110,.2)}
+.svc-icon i{color:var(--gold);font-size:.95rem}
+.svc-name{font-family:var(--ff);font-size:1.18rem;font-weight:500;color:var(--char);display:block}
+.svc-en{font-size:.7rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--txl);display:block;margin-top:2px;margin-bottom:10px}
+.svc-desc{font-size:.86rem;color:var(--txm);line-height:1.7;margin-bottom:16px}
+.svc-price{display:inline-block;padding:4px 14px;background:linear-gradient(135deg,var(--gold),var(--gold-l));color:#fff;font-size:.76rem;font-weight:600;letter-spacing:.04em;border-radius:20px}
+.svc-foot{display:flex;justify-content:space-between;align-items:center;padding:14px 24px;border-top:1px solid rgba(201,169,110,.1)}
+.svc-lnk{display:flex;align-items:center;gap:6px;font-size:.73rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);cursor:pointer;border:none;background:none;font-family:var(--fs);transition:gap .3s}
+.svc-lnk:hover{gap:10px}
+.btn-sm{padding:8px 16px;font-size:.72rem}
+.price-note{text-align:center;margin-top:44px;font-size:.78rem;color:var(--txl);font-style:italic;padding:14px 20px;border:1px solid rgba(201,169,110,.15);max-width:580px;margin-left:auto;margin-right:auto;border-radius:2px}
+
+/* ===== WHY ===== */
+#why{padding:130px 0;background:var(--char);position:relative;overflow:hidden}
+#why::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 65% 85% at 85% 50%,rgba(201,169,110,.07) 0%,transparent 70%);pointer-events:none}
+.stats-g{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:60px}
+.stat-c{text-align:center;padding:40px 20px;border:1px solid rgba(201,169,110,.14);border-radius:8px;transition:var(--t)}
+.stat-c:hover{border-color:rgba(201,169,110,.4);transform:translateY(-5px)}
+.stat-ico{width:46px;height:46px;margin:0 auto 18px;border-radius:50%;background:rgba(201,169,110,.1);display:flex;align-items:center;justify-content:center;border:1px solid rgba(201,169,110,.2)}
+.stat-ico i{color:var(--gold);font-size:.95rem}
+.stat-n{font-family:var(--ff);font-size:3rem;font-weight:300;color:var(--gold);line-height:1;margin-bottom:8px}
+.stat-lf{display:block;font-size:.88rem;font-weight:500;color:#fff;margin-bottom:4px}
+.stat-le{display:block;font-size:.7rem;color:rgba(255,255,255,.38);letter-spacing:.09em;text-transform:uppercase}
+
+/* ===== TESTIMONIALS ===== */
+#testi{padding:130px 0;background:var(--smoke);position:relative}
+#testi::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 90% 65% at 50% 110%,rgba(242,212,206,.28) 0%,transparent 70%);pointer-events:none}
+.testi-g{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.testi-c{background:#fff;padding:34px 26px;border-radius:8px;border:1px solid rgba(201,169,110,.1);box-shadow:var(--sh2);transition:var(--t)}
+.testi-c:hover{transform:translateY(-5px);box-shadow:var(--sh3)}
+.qmark{font-family:var(--ff);font-size:4.5rem;font-weight:700;color:rgba(201,169,110,.11);line-height:.5;margin-bottom:18px;display:block}
+.stars{display:flex;gap:3px;margin-bottom:14px}
+.stars i{color:var(--gold);font-size:.78rem}
+.testi-tx{font-family:var(--ff);font-size:.98rem;font-style:italic;color:var(--tx);line-height:1.75;margin-bottom:22px}
+.testi-au{display:flex;align-items:center;gap:11px}
+.au-av{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--rose),var(--gold-l));display:flex;align-items:center;justify-content:center;font-family:var(--ff);font-size:.95rem;color:#fff;font-weight:500;flex-shrink:0}
+.au-name{font-weight:600;font-size:.86rem;color:var(--char)}
+.au-lbl{font-size:.72rem;color:var(--txl)}
+
+/* ===== CONTACT ===== */
+#contact{padding:130px 0}
+.contact-g{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-top:52px}
+.flbl{display:block;font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--txm);margin-bottom:8px}
+.finp,.fsel,.ftxt{width:100%;padding:13px 15px;background:#fff;border:1px solid rgba(201,169,110,.2);border-radius:2px;font-family:var(--fs);font-size:.9rem;color:var(--tx);transition:border-color .3s,box-shadow .3s;outline:none;margin-bottom:18px}
+.finp:focus,.fsel:focus,.ftxt:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,169,110,.1)}
+.ftxt{resize:vertical;min-height:120px}
+.ci-blk{padding:38px;background:var(--char);border-radius:8px;color:#fff}
+.ci-title{font-family:var(--ff);font-size:1.55rem;font-weight:400;color:#fff;margin-bottom:6px}
+.ci-sub{font-size:.83rem;color:rgba(255,255,255,.45);margin-bottom:28px}
+.c-item{display:flex;align-items:flex-start;gap:14px;margin-bottom:22px}
+.c-ico{width:38px;height:38px;background:rgba(201,169,110,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid rgba(201,169,110,.2)}
+.c-ico i{color:var(--gold);font-size:.85rem}
+.c-lbl{font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.c-val{font-size:.88rem;color:rgba(255,255,255,.78)}
+.c-val a{color:inherit;transition:color .3s}
+.c-val a:hover{color:var(--gold-l)}
+.btn-wa{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:15px;background:#25D366;color:#fff;border-radius:2px;font-weight:600;font-size:.88rem;transition:var(--t);text-decoration:none;border:none;cursor:pointer;font-family:var(--fs);margin-top:28px}
+.btn-wa:hover{background:#1EB857;transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.35)}
+
+/* ===== MAP ===== */
+#map{padding:80px 0;background:var(--smoke)}
+.map-cap{text-align:center;font-family:var(--ff);font-style:italic;color:var(--txm);margin-bottom:20px;font-size:.98rem}
+.map-w{border:1px solid rgba(201,169,110,.22);border-radius:8px;overflow:hidden;box-shadow:var(--sh1)}
+.map-w iframe{display:block;width:100%;height:420px;border:none;filter:saturate(78%) brightness(1.03)}
+
+/* ===== FOOTER ===== */
+footer{background:var(--char2);padding:70px 0 0;border-top:1px solid rgba(201,169,110,.15)}
+.foot-g{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:44px;margin-bottom:52px}
+.flogo{font-family:var(--ff);font-size:1.75rem;font-weight:600;color:#fff;margin-bottom:10px;display:block}
+.flogo span{color:var(--gold)}
+.ftagline{font-size:.78rem;color:rgba(255,255,255,.38);line-height:1.65;margin-bottom:22px}
+.fsoc{display:flex;gap:11px}
+.sl{width:36px;height:36px;background:rgba(255,255,255,.05);border:1px solid rgba(201,169,110,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.55);font-size:.82rem;transition:var(--t)}
+.sl:hover{background:var(--gold);border-color:var(--gold);color:#fff}
+.fc h4{font-size:.68rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.flinks{list-style:none;display:flex;flex-direction:column;gap:9px}
+.flinks a,.flinks span{font-size:.83rem;color:rgba(255,255,255,.45);transition:color .3s;cursor:pointer}
+.flinks a:hover{color:var(--gold-l)}
+.fbot{border-top:1px solid rgba(255,255,255,.06);padding:18px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:.76rem;color:rgba(255,255,255,.28)}
+.fbot span{color:rgba(255,255,255,.45)}
+.heart{color:var(--rose2)}
+
+/* ===== WHATSAPP FAB ===== */
+.fab{position:fixed;bottom:28px;right:28px;z-index:998;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.42);color:#fff;font-size:1.4rem;transition:var(--t);text-decoration:none}
+.fab:hover{background:#1EB857;transform:scale(1.1)}
+.fab::before{content:'';position:absolute;inset:-8px;border-radius:50%;border:1.5px solid rgba(37,211,102,.42);animation:pr 2.5s ease-out infinite}
+.fab::after{content:'';position:absolute;inset:-16px;border-radius:50%;border:1px solid rgba(37,211,102,.2);animation:pr 2.5s .42s ease-out infinite}
+@keyframes pr{0%{transform:scale(.9);opacity:.7}100%{transform:scale(1.32);opacity:0}}
+
+/* ===== BOOKING MODAL ===== */
+.modal-ov{position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:3000;display:none;align-items:center;justify-content:center;padding:24px;backdrop-filter:blur(5px)}
+.modal-ov.open{display:flex;animation:lbFade .28s ease}
+.modal-box{background:var(--ivory);border-radius:8px;max-width:500px;width:100%;max-height:90vh;overflow-y:auto;position:relative;animation:slideUp .38s var(--ease)}
+@keyframes slideUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+.modal-hd{padding:28px 28px 0;border-bottom:1px solid rgba(201,169,110,.14);padding-bottom:18px;display:flex;align-items:flex-start;justify-content:space-between}
+.modal-title{font-family:var(--ff);font-size:1.55rem;font-weight:500;color:var(--char)}
+.modal-sub{font-size:.78rem;color:var(--txl);margin-top:3px}
+.modal-x{background:none;border:none;cursor:pointer;color:var(--txl);font-size:1.15rem;padding:4px;transition:color .3s;flex-shrink:0}
+.modal-x:hover{color:var(--char)}
+.modal-bd{padding:24px 28px 28px}
+.modal-svc-hl{display:flex;align-items:center;gap:12px;padding:13px 16px;background:rgba(201,169,110,.06);border:1px solid rgba(201,169,110,.15);border-radius:4px;margin-bottom:22px}
+.modal-svc-hl i{color:var(--gold);font-size:1.05rem}
+.modal-sn{font-family:var(--ff);font-size:.98rem;font-weight:500}
+.modal-sp{font-size:.76rem;color:var(--txm)}
+.modal-opts{display:flex;gap:14px;margin-bottom:22px}
+.mopt{flex:1;text-align:center;padding:16px 8px;border:1px solid rgba(201,169,110,.15);border-radius:4px;cursor:pointer;transition:var(--t)}
+.mopt:hover,.mopt.sel{border-color:var(--gold);background:rgba(201,169,110,.06)}
+.mopt i{color:var(--gold);font-size:1.15rem;margin-bottom:7px;display:block}
+.mopt-l{font-size:.8rem;font-weight:500;color:var(--tx)}
+.mopt-s{font-size:.7rem;color:var(--txl);margin-top:2px}
+.mdiv{display:flex;align-items:center;gap:12px;margin:18px 0;color:var(--txl);font-size:.73rem}
+.mdiv::before,.mdiv::after{content:'';flex:1;height:1px;background:rgba(201,169,110,.2)}
+.mwa{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:15px;background:#25D366;color:#fff;border-radius:2px;font-weight:600;font-size:.88rem;transition:var(--t);border:none;cursor:pointer;font-family:var(--fs);letter-spacing:.04em}
+.mwa:hover{background:#1EB857;transform:translateY(-1px);box-shadow:0 6px 20px rgba(37,211,102,.3)}
+.mph{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:13px;background:var(--char);color:#fff;border-radius:2px;font-weight:500;font-size:.84rem;transition:var(--t);text-decoration:none;border:none;cursor:pointer;font-family:var(--fs);margin-top:10px}
+.mph:hover{background:var(--char3);transform:translateY(-1px)}
+
+/* ===== SERVICE DETAIL MODAL ===== */
+.svc-modal-img{width:100%;height:240px;object-fit:cover;border-radius:8px 8px 0 0}
+.svc-modal-ph{width:100%;height:240px;background:linear-gradient(135deg,var(--rose),var(--ivory2));display:flex;align-items:center;justify-content:center;border-radius:8px 8px 0 0}
+.svc-modal-ph i{font-size:3.5rem;color:var(--gold);opacity:.38}
+.svc-prow{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid rgba(201,169,110,.1)}
+.svc-prow:last-child{border-bottom:none}
+.svc-pon{font-size:.9rem;color:var(--tx)}
+.svc-pov{font-weight:600;color:var(--gold-d)}
+
+/* ===== TOAST ===== */
+.toast{position:fixed;bottom:100px;right:28px;z-index:4000;background:var(--char);color:#fff;padding:13px 18px;border-radius:8px;font-size:.83rem;box-shadow:0 8px 32px rgba(0,0,0,.3);transform:translateX(120%);transition:transform .4s var(--ease);display:flex;align-items:center;gap:9px;max-width:290px}
+.toast.show{transform:translateX(0)}
+.toast i{color:var(--gold)}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1024px){.svc-grid{grid-template-columns:repeat(2,1fr)}.stats-g{grid-template-columns:repeat(2,1fr)}.foot-g{grid-template-columns:1fr 1fr;gap:28px}}
+@media(max-width:768px){
+  .nav-links{display:none}.ham{display:flex}.nav-r .btn{display:none}
+  .hero-img{width:100%;opacity:.15}
+  .hero-img::before{background:linear-gradient(to bottom,transparent 15%,#080808 80%)}
+  .about-g{grid-template-columns:1fr;gap:44px}.about-accent-img{display:none}
+  .svc-grid{grid-template-columns:1fr}.stats-g{grid-template-columns:1fr 1fr;gap:14px}
+  .testi-g{grid-template-columns:1fr}
+  .contact-g{grid-template-columns:1fr;gap:36px}
+  .foot-g{grid-template-columns:1fr;gap:28px}
+  .trust-in{overflow-x:auto;-webkit-overflow-scrolling:touch;flex-wrap:nowrap;padding:0 16px;justify-content:flex-start;scrollbar-width:none;}
+  .trust-in::-webkit-scrollbar{display:none;}
+  .tbadge{flex-shrink:0}
+  .fbot{flex-direction:column;text-align:center;gap:16px}
+  #about,#services,#why,#testi,#contact{padding:80px 0}
+  .lb-p{left:-6px}.lb-n{right:-6px}
+  .modal-opts{flex-direction:column}
+  .mob{background:rgba(8,8,8,.97);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
+}
+@media(max-width:480px){
+  .h-xl{font-size:2.85rem}
+  .h-lg{font-size:1.9rem}
+  .h-md{font-size:1.5rem}
+  .hero-ctas{flex-direction:column;align-items:stretch;gap:12px}
+  .hero-ctas .btn{width:100%;justify-content:center}
+  .stats-g{grid-template-columns:1fr 1fr;gap:12px}
+  .stat-c{padding:26px 14px}
+  .stat-n{font-size:2.3rem}
+  .stat-lf{font-size:0.8rem}
+  .ci-blk{padding:28px 20px}
+  .flogo{font-size:1.6rem}
+  .map-w iframe{height:300px}
+  .testi-c{padding:28px 20px}
+  .about-quote{padding:18px 20px}
+  .modal-bd{padding:24px 20px 24px}
+  .modal-hd{padding:24px 20px 0}
+}
+
+
+/* ===== WOW HAIR LUXURY RESTYLE OVERRIDES ===== */
+:root{
+  --gold:#d4af37;
+  --gold-l:#f2d78a;
+  --gold-d:#9c7a1b;
+  --ivory:#0a0a0a;
+  --ivory2:#111111;
+  --rose:#1a472a;
+  --rose2:#2d6a4f;
+  --char:#0a0a0a;
+  --char2:#111111;
+  --char3:#181818;
+  --smoke:#0f0f0f;
+  --tx:#ffffff;
+  --txm:#f5f0e8;
+  --txl:rgba(245,240,232,.7);
+  --ff:'Playfair Display','Cormorant Garamond',serif;
+  --fs:'Lato',system-ui,sans-serif;
+  --t:all .3s ease;
+  --sh1:0 12px 40px rgba(0,0,0,.35);
+  --sh2:0 10px 35px rgba(0,0,0,.28);
+  --sh3:0 20px 60px rgba(212,175,55,.15);
+}
+body{
+  background:var(--char);
+  color:var(--txm);
+  background-image:radial-gradient(circle at 20% 20%, rgba(45,106,79,.08), transparent 35%), radial-gradient(circle at 80% 0%, rgba(212,175,55,.05), transparent 28%), linear-gradient(180deg,#070707 0%,#0a0a0a 35%,#0f0f0f 100%);
+}
+.container{max-width:1280px;padding:0 28px}
+.h-xl,.h-lg,.h-md,.logo,.flogo,.ci-title,.modal-title,.svc-name,.hero-sub,.testi-tx,.about-quote p,.ttable td:first-child{font-family:var(--ff)}
+.lbl,.svc-en,.nav-links a,.lb,.ttab,.gfb,.flbl,.c-lbl,.fc h4,.hero-scroll,.tbadge,.svc-price,.svc-lnk{letter-spacing:.16em}
+#nav{background:linear-gradient(180deg,rgba(5,5,5,.86),rgba(5,5,5,.25));backdrop-filter:blur(18px);border-bottom:1px solid rgba(212,175,55,.08)}
+#nav.sc{background:rgba(8,8,8,.92);box-shadow:0 8px 30px rgba(0,0,0,.28);border-bottom:1px solid rgba(212,175,55,.18)}
+.logo,.nav-links a,.mob a,.mob button{color:#fff}
+.logo::after,.nav-links a::after,.gold-bar{background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.lang-tog,.gfb,.ttab,.mopt,.finp,.fsel,.ftxt,.map-w,.svc-card,.testi-c,.stat-c,.ci-blk,.modal-box,.svc-foot,.ttable thead tr,.ttable tbody tr,.foot-g,footer{border-color:rgba(212,175,55,.18)}
+.btn{min-height:48px;border-radius:999px;padding:14px 30px}
+.btn-g,.btn-o,.btn-dk{
+  background:rgba(10,10,10,.85);
+  color:var(--gold-l);
+  border:1px solid rgba(212,175,55,.55);
+  box-shadow:0 0 0 1px rgba(212,175,55,.08) inset, 0 8px 30px rgba(0,0,0,.25);
+}
+.btn-g::before,.btn-o::before,.btn-dk::before{
+  content:'';position:absolute;inset:0;background:linear-gradient(110deg,transparent 10%,rgba(212,175,55,.1) 38%,rgba(255,255,255,.18) 50%,rgba(212,175,55,.08) 62%,transparent 90%);transform:translateX(-120%);transition:transform .8s ease;
+}
+.btn-g:hover::before,.btn-o:hover::before,.btn-dk:hover::before{transform:translateX(120%)}
+.btn-g:hover,.btn-o:hover,.btn-dk:hover{background:linear-gradient(135deg,#b9922f,#f0d17d);color:#050505;transform:translateY(-3px);box-shadow:0 16px 40px rgba(212,175,55,.22)}
+.btn-w{background:linear-gradient(135deg,#f5f0e8,#fff7ec);color:#111}
+#hero{min-height:100vh;padding-top:80px}
+#hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.05) .6px, transparent .7px);background-size:18px 18px;opacity:.15;mix-blend-mode:soft-light;pointer-events:none;z-index:0}
+.hero-bg{background:linear-gradient(115deg, rgba(3,3,3,.96) 0%, rgba(7,7,7,.92) 42%, rgba(12,18,14,.82) 72%, rgba(8,8,8,.95) 100%), radial-gradient(circle at 78% 18%, rgba(45,106,79,.22), transparent 26%), radial-gradient(circle at 25% 78%, rgba(212,175,55,.08), transparent 24%)}
+.hero-img{width:56%}
+.hero-img img{opacity:.48;mix-blend-mode:normal;filter:brightness(.56) contrast(1.05) saturate(.9)}
+.hero-img::before{background:linear-gradient(to right,#080808 0%,rgba(8,8,8,.88) 28%,rgba(8,8,8,.2) 68%,transparent 100%)}
+.hero-img::after{background:linear-gradient(to top,#080808,transparent)}
+.hero-ct{max-width:760px}
+.h-badge{background:rgba(26,71,42,.22);border:1px solid rgba(212,175,55,.24);color:var(--gold-l);box-shadow:0 0 0 1px rgba(255,255,255,.03) inset}
+.hero-h1{color:#fff;text-shadow:0 8px 40px rgba(0,0,0,.45)}
+.hero-h1 em{color:var(--gold-l)}
+.hero-sub{color:var(--txm);animation:breathe 4s ease-in-out infinite}
+@keyframes breathe{0%,100%{opacity:.8;transform:translateY(0)}50%{opacity:1;transform:translateY(-3px)}}
+.hero-scroll{color:var(--gold-l)}
+#trust,#why,footer{background:#090909}
+#about,#contact{background:#0c0c0c}
+#services,#testi,#map{background:#101010}
+#about,#services,#why,#testi,#contact{padding:100px 0}
+section{position:relative}
+section + section::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:min(88%,1180px);height:1px;background:linear-gradient(90deg,transparent,rgba(212,175,55,.55),transparent)}
+.about-main-img,.about-accent-img,.svc-card,.testi-c,.ci-blk,.modal-box,.map-w,.stat-c{background:#111;border-radius:18px}
+.about-main-img,.about-accent-img,.svc-img-wrap img,.svc-modal-img{object-fit:cover}
+.about-accent-img{border:1px solid rgba(212,175,55,.35)}
+.about-quote{background:linear-gradient(90deg,rgba(26,71,42,.16),rgba(212,175,55,.05));border-left:2px solid var(--gold)}
+.about-body,.svc-desc,.ci-sub,.c-val,.ftagline,.flinks a,.flinks span,.map-cap{color:var(--txm)}
+.wm{color:rgba(212,175,55,.05)}
+.svc-card,.testi-c,.stat-c{background:linear-gradient(180deg,#111 0%,#0d0d0d 100%);border:1px solid rgba(212,175,55,.12);overflow:hidden}
+.svc-card::before,.testi-c::before,.stat-c::before,.ci-blk::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(212,175,55,.72),transparent)}
+.svc-card:hover,.testi-c:hover,.stat-c:hover{transform:translateY(-8px);box-shadow:0 20px 60px rgba(212,175,55,.15);border-color:rgba(212,175,55,.28)}
+.svc-icon,.stat-ico,.c-ico{background:rgba(26,71,42,.25);border:1px solid rgba(212,175,55,.18)}
+.svc-icon i,.stat-ico i,.c-ico i,.stars i,.svc-lnk,.svc-price,.qmark,.stat-n,.fc h4,.c-lbl,.lbl{color:var(--gold-l)}
+.svc-price{background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.22);color:var(--gold-l)}
+.svc-foot,.ttable thead tr,.ttable tbody tr,.fbot{border-color:rgba(212,175,55,.12)}
+.ttable tbody tr:hover{background:rgba(212,175,55,.06)}
+.ttable td{color:rgba(255,255,255,.82)}
+.ttable td:last-child{color:var(--gold-l)}
+.ci-blk,.modal-box{background:linear-gradient(180deg,#121212,#0d0d0d)}
+.modal-hd{border-bottom:1px solid rgba(212,175,55,.14)}
+.modal-svc-hl,.mopt:hover,.mopt.sel{background:rgba(26,71,42,.16)}
+.finp,.fsel,.ftxt{background:#0f0f0f;color:#fff;border:1px solid rgba(212,175,55,.2);border-radius:14px}
+.finp:focus,.fsel:focus,.ftxt:focus{border-color:rgba(212,175,55,.7);box-shadow:0 0 0 4px rgba(212,175,55,.08)}
+.btn-wa,.mwa{background:#163a24;border:1px solid rgba(45,106,79,.4)}
+.btn-wa:hover,.mwa:hover{background:#1f4d31;box-shadow:0 14px 30px rgba(26,71,42,.26)}
+.mph{background:#141414;border:1px solid rgba(212,175,55,.2)}
+footer{border-top:1px solid rgba(212,175,55,.2)}
+.sl{background:#111;border:1px solid rgba(212,175,55,.2)}
+.sl:hover{background:linear-gradient(135deg,#b9922f,#f0d17d);color:#050505}
+.fab{background:linear-gradient(135deg,#163a24,#2d6a4f)}
+.fab:hover{transform:scale(1.08) translateY(-2px)}
+.toast{background:#111;border:1px solid rgba(212,175,55,.16)}
+.mob{background:rgba(8,8,8,.96)}
+@media (max-width:1024px){
+  .container{padding:0 22px}
+  .hero-img{width:100%;opacity:.28}
+  .hero-ct{max-width:100%}
+}
+@media (max-width:768px){
+  #hero{padding-top:96px;align-items:center;min-height:100svh}
+  #about,#services,#why,#testi,#contact{padding:72px 0}
+  .container{padding:0 18px}
+  .btn{min-height:52px;width:auto}
+  .nav-links{display:none}
+
+  /* Hero: full-width text */
+  .hero-ct{max-width:100%;text-align:center;padding:0 0 40px}
+  .hero-ctas{justify-content:center}
+  .hero-badge{font-size:.65rem}
+  .hero-img{width:100%;opacity:.22}
+  .hero-img::before{background:linear-gradient(to bottom,rgba(8,8,8,.7) 0%,rgba(8,8,8,.92) 70%,#080808 100%)}
+
+  /* Section headers */
+  .sec-hd{margin-bottom:40px}
+  .h-xl{font-size:clamp(2.4rem,9vw,3.2rem)}
+  .h-lg{font-size:clamp(1.7rem,5.5vw,2.2rem)}
+
+  /* Services */
+  .svc-grid{grid-template-columns:1fr}
+  .svc-img-wrap{height:180px}
+
+  /* Stats */
+  .stats-g{grid-template-columns:1fr 1fr}
+
+  /* Testimonials */
+  .testi-g{grid-template-columns:1fr}
+  .testi-c{padding:28px 20px}
+
+  /* Contact */
+  .contact-g{grid-template-columns:1fr;gap:36px}
+  .ci-blk{padding:28px 20px}
+
+  /* Lightbox nav */
+  .lb-p{left:-4px}.lb-n{right:-4px}
+
+  /* Modal */
+  .modal-opts{flex-direction:column}
+  .modal-hd{padding:22px 18px 0}
+  .modal-bd{padding:22px 18px 24px}
+  .modal-box{border-radius:14px}
+
+  /* About */
+  .about-g{grid-template-columns:1fr;gap:36px}
+  .about-accent-img{display:none}
+  .about-main-img{border-radius:14px}
+  .about-quote{padding:18px 18px}
+
+  /* Map */
+  .map-w iframe{height:280px}
+}
+@media (max-width:480px){
+  .container{padding:0 14px}
+  .btn,.mwa,.mph,.btn-wa{min-height:52px;font-size:.78rem}
+  .h-xl{font-size:clamp(2.1rem,9.5vw,2.8rem)}
+  .h-lg{font-size:clamp(1.55rem,6vw,2rem)}
+  .hero-sub{font-size:.95rem}
+
+  /* Stats compact */
+  .stats-g{grid-template-columns:1fr 1fr;gap:10px}
+  .stat-c{padding:22px 12px}
+  .stat-n{font-size:2rem}
+  .stat-lf{font-size:.78rem}
+
+  /* Service cards */
+  .svc-body{padding:20px 18px}
+  .svc-foot{padding:12px 18px}
+  .svc-name{font-size:1.05rem}
+
+  /* Footer logo */
+  .flogo{font-size:1.5rem}
+
+  /* Trust badges smaller */
+  .tbadge{padding:8px 16px;font-size:.66rem}
+
+  /* Lightbox */
+  .lb-p{left:-4px}.lb-n{right:-4px}
+}
+
+
+@media (max-width:380px){
+  .h-xl{font-size:2rem}
+  .h-lg{font-size:1.45rem}
+  .btn{padding:13px 20px;font-size:.75rem}
+  .hero-ctas{gap:10px}
+  .tbadge{padding:7px 12px;font-size:.62rem}
+  .svc-price{font-size:.7rem}
+  .stats-g{grid-template-columns:1fr 1fr}
+  .stat-n{font-size:1.8rem}
+}
+
+/* ===== THEME TOGGLE BUTTON ===== */
+.theme-btn{
+  position:relative;
+  width:44px;height:44px;
+  border-radius:50%;
+  border:1px solid rgba(212,175,55,.35);
+  background:rgba(10,10,10,.7);
+  cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:all .35s ease;
+  flex-shrink:0;
+  overflow:hidden;
+  backdrop-filter:blur(8px);
+}
+.theme-btn:hover{
+  border-color:rgba(212,175,55,.7);
+  background:rgba(212,175,55,.12);
+  transform:scale(1.08);
+}
+.theme-btn svg{
+  position:absolute;
+  transition:opacity .3s ease, transform .4s cubic-bezier(.34,1.56,.64,1);
+  width:18px;height:18px;
+}
+/* Sun icon — shown in dark mode (click to go light) */
+.theme-btn .icon-sun{
+  opacity:1;
+  transform:rotate(0deg) scale(1);
+  color:var(--gold-l);
+}
+/* Moon icon — shown in light mode (click to go dark) */
+.theme-btn .icon-moon{
+  opacity:0;
+  transform:rotate(-45deg) scale(0.6);
+  color:var(--gold);
+}
+/* When light mode is active */
+body.light-mode .theme-btn .icon-sun{
+  opacity:0;
+  transform:rotate(45deg) scale(0.6);
+}
+body.light-mode .theme-btn .icon-moon{
+  opacity:1;
+  transform:rotate(0deg) scale(1);
+}
+body.light-mode .theme-btn{
+  background:rgba(245,240,232,.85);
+  border-color:rgba(156,122,27,.4);
+}
+
+/* ===== LIGHT MODE OVERRIDES ===== */
+body.light-mode{
+  background:#FAF6F0;
+  color:#2C2C2C;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(201,169,110,.06), transparent 35%),
+    radial-gradient(circle at 80% 0%, rgba(156,122,27,.04), transparent 28%),
+    linear-gradient(180deg,#FEFAF5 0%,#FAF6F0 50%,#F5EAD8 100%);
+}
+body.light-mode #nav{
+  background:linear-gradient(180deg,rgba(250,246,240,.92),rgba(250,246,240,.55));
+  border-bottom-color:rgba(156,122,27,.1);
+}
+body.light-mode #nav.sc{
+  background:rgba(253,249,244,.96);
+  box-shadow:0 4px 24px rgba(0,0,0,.08);
+  border-bottom-color:rgba(212,175,55,.22);
+}
+body.light-mode .logo,
+body.light-mode .nav-links a,
+body.light-mode .mob a,
+body.light-mode .mob button{color:#1C1C1C}
+body.light-mode .mob{background:rgba(252,248,242,.97)}
+body.light-mode #trust,body.light-mode #why,body.light-mode footer{background:#1C1C1C}
+body.light-mode #about,body.light-mode #contact{background:#F5EAD8}
+body.light-mode #services,body.light-mode #testi,body.light-mode #map{background:#FAF6F0}
+body.light-mode .svc-card,body.light-mode .testi-c,body.light-mode .stat-c{
+  background:linear-gradient(180deg,#fff 0%,#FAF6F0 100%);
+  border-color:rgba(201,169,110,.2);
+  color:#2C2C2C;
+}
+body.light-mode .svc-card::before,body.light-mode .testi-c::before,body.light-mode .stat-c::before{
+  background:linear-gradient(90deg,transparent,rgba(201,169,110,.5),transparent);
+}
+body.light-mode .svc-name,.light-mode .au-name{color:#1C1C1C}
+body.light-mode .svc-desc,body.light-mode .about-body,body.light-mode .ci-sub,body.light-mode .c-val,body.light-mode .ftagline{color:#5A4A3A}
+body.light-mode .ci-blk,body.light-mode .modal-box{background:linear-gradient(180deg,#1C1C1C,#2A2A2A)}
+body.light-mode .finp,body.light-mode .fsel,body.light-mode .ftxt{
+  background:#fff;color:#2C2C2C;
+  border-color:rgba(156,122,27,.25);
+}
+body.light-mode .about-quote{
+  background:linear-gradient(90deg,rgba(201,169,110,.1),rgba(201,169,110,.03));
+  border-left:2px solid var(--gold);
+}
+body.light-mode .about-quote p{color:#2C2C2C}
+body.light-mode .testi-tx{color:#2C2C2C}
+body.light-mode .au-name{color:#1C1C1C}
+body.light-mode .au-lbl{color:#7A6A5A}
+body.light-mode section+section::before{
+  background:linear-gradient(90deg,transparent,rgba(201,169,110,.4),transparent);
+}
+body.light-mode .btn-g,.light-mode .btn-o,.light-mode .btn-dk{
+  background:rgba(245,240,232,.9);
+  color:var(--gold-d);
+  border-color:rgba(156,122,27,.5);
+}
+body.light-mode .btn-g:hover,.light-mode .btn-o:hover,.light-mode .btn-dk:hover{
+  background:linear-gradient(135deg,#b9922f,#f0d17d);
+  color:#050505;
+}
+body.light-mode .ham span{background:#1C1C1C}
+body.light-mode .theme-btn{border-color:rgba(156,122,27,.4)}
+body.light-mode .lang-tog{border-color:rgba(156,122,27,.35)}
+</style>
+</head>
+<!-- NAV -->
+<nav id="nav">
+ <div class="container">
+  <div class="nav-in">
+   <a href="#hero" class="logo">W<span>O</span>W <span style="font-size:.88rem;font-weight:300">Hair</span></a>
+   <ul class="nav-links">
+    <li><a href="#hero" data-fr="Accueil" data-en="Home" data-ar="Ana Sayfa">Accueil</a></li>
+    <li><a href="#services" data-fr="Services" data-en="Services" data-ar="Hizmetler">Services</a></li>
+    <li><a href="#about" data-fr="À Propos" data-en="About" data-ar="Hakkımızda">À Propos</a></li>
+    <li><a href="#contact" data-fr="Contact" data-en="Contact" data-ar="İletişim">Contact</a></li>
+   </ul>
+   <div class="nav-r">
+    <div class="lang-tog">
+     <button class="lb on" id="bFr" onclick="setLang('fr')">FR</button>
+     <button class="lb" id="bEn" onclick="setLang('en')">EN</button>
+     <button class="lb" id="bAr" onclick="setLang('tr')">TR</button>
+    </div>
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" aria-label="Toggle dark/light mode" title="Toggle theme">
+     <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"/>
+      <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+      <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+     </svg>
+     <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/>
+     </svg>
+    </button>
+    <button class="btn btn-g" onclick="openBook(null)" data-fr="Réserver" data-en="Book Now" data-ar="Randevu Al">Réserver</button>
+   </div>
+   <div class="ham" id="ham" onclick="togMob()"><span></span><span></span><span></span></div>
+  </div>
+ </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob" id="mob">
+ <button class="mob-x" onclick="togMob()"><i class="fa-solid fa-xmark"></i></button>
+ <a href="#hero" onclick="togMob()" data-fr="Accueil" data-en="Home" data-ar="Ana Sayfa">Accueil</a>
+ <a href="#services" onclick="togMob()" data-fr="Services" data-en="Services" data-ar="Hizmetler">Services</a>
+ <a href="#about" onclick="togMob()" data-fr="À Propos" data-en="About" data-ar="Hakkımızda">À Propos</a>
+ <a href="#contact" onclick="togMob()" data-fr="Contact" data-en="Contact" data-ar="İletişim">Contact</a>
+ <button onclick="togMob();openBook(null)" class="btn btn-g" data-fr="Réserver Maintenant" data-en="Book Now" data-ar="Hemen Randevu Al">Réserver</button>
+</div>
+
+<!-- ============================================================
+     HERO SECTION
+     ============================================================ -->
+<section id="hero">
+ <div class="hero-bg"></div>
+ <div class="hero-img">
+  <img src="logo.jpg" alt="WOW Hair Beauty Center">
+ </div>
+ <div class="container">
+  <div class="hero-ct">
+   <div class="h-badge"><span>🇹🇷</span><span data-fr="#1 Centre Turc de Beauté en Algérie" data-en="Algeria's #1 Turkish Beauty Center" data-ar="Cezayir'in 1 Numaralı Türk Güzellik Merkezi">#1 Centre Turc de Beauté en Algérie</span></div>
+   <h1 class="h-xl hero-h1">
+    <span data-fr="L'Art de la Beauté Turque," data-en="The Art of Turkish Beauty," data-ar="Türk Güzelliğinin Sanatı,">L'Art de la Beauté Turque,</span><br>
+    <em data-fr="Sublimé Pour Vous" data-en="Elevated For You" data-ar="Sizin İçin Yüceltildi">Sublimé Pour Vous</em>
+   </h1>
+   <p class="hero-sub" data-fr="Expertise turque. Éclat algérien. Excellence garantie." data-en="Turkish expertise. Algerian radiance. Guaranteed excellence." data-ar="Türk uzmanlığı. Cezayir ışıltısı. Garantili mükemmellik.">Expertise turque. Éclat algérien. Excellence garantie.</p>
+   <div class="hero-ctas">
+    <button class="btn btn-g" onclick="openBook(null)" data-fr="Prendre Rendez-vous →" data-en="Book Appointment →" data-ar="Randevu Al →">Prendre Rendez-vous →</button>
+    <a href="#services" class="btn btn-o" data-fr="Nos Services" data-en="Our Services" data-ar="Hizmetlerimiz">Nos Services</a>
+   </div>
+  </div>
+ </div>
+ <div class="hero-scroll" onclick="document.getElementById('trust').scrollIntoView({behavior:'smooth'})">
+  <span data-fr="Découvrir" data-en="Discover" data-ar="Keşfet">Découvrir</span>
+  <div class="arr-d"></div>
+ </div>
+</section>
+
+<!-- TRUST -->
+<section id="trust">
+ <div class="container">
+  <div class="trust-in">
+   <div class="tbadge"><i class="fa-solid fa-star"></i><span data-fr="Expertise Turque Certifiée" data-en="Certified Turkish Expertise" data-ar="Sertifikalı Türk Uzmanlığı">Expertise Turque Certifiée</span></div>
+   <div class="tbadge"><i class="fa-solid fa-leaf"></i><span data-fr="Produits Professionnels" data-en="Professional Products" data-ar="Profesyonel Ürünler">Produits Professionnels</span></div>
+   <div class="tbadge"><i class="fa-solid fa-calendar-check"></i><span data-fr="Ouvert 7j/7" data-en="Open 7 Days/Week" data-ar="Haftanın 7 Günü Açık">Ouvert 7j/7</span></div>
+   <div class="tbadge"><i class="fa-solid fa-location-dot"></i><span>Tixeraïne, Alger</span></div>
+  </div>
+ </div>
+</section>
+
+<!-- ============================================================
+     ABOUT SECTION
+     ============================================================ -->
+<section id="about">
+ <div class="container">
+  <div class="about-g">
+   <div class="about-img-col rev">
+    <div class="wm">و</div>
+
+    <img src="about.jpeg" alt="WOW Salon — Coiffure experte" class="about-main-img">
+
+   
+    <img src="nudeblacknail.jpg" alt="WOW Salon — Manucure premium" class="about-accent-img">
+
+   </div>
+   <div>
+    <span class="lbl rev" data-fr="Notre Histoire" data-en="Our Story" data-ar="Hikâyemiz">Notre Histoire</span>
+    <div class="gold-bar rev d1"></div>
+    <h2 class="h-lg rev d2" data-fr="Bienvenue chez WOW" data-en="Welcome to WOW" data-ar="WOW'a Hoş Geldiniz">Bienvenue chez WOW</h2>
+    <div class="about-quote rev d3">
+     <p data-fr="&ldquo;La beauté n'est pas un luxe, c'est une expérience.&rdquo;" data-en="&ldquo;Beauty is not a luxury — it is an experience.&rdquo;" data-ar="&ldquo;Güzellik bir lüks değil, bir deneyimdir.&rdquo;">&ldquo;La beauté n'est pas un luxe, c'est une expérience.&rdquo;</p>
+    </div>
+    <p class="about-body rev d3" data-fr="WOW Hair Beauty Center est le premier centre de beauté d'inspiration turque en Algérie. Nous avons apporté au cœur d'Alger des techniques authentiques venues d'Istanbul, reconnues mondialement pour leur excellence et leur précision." data-en="WOW Hair Beauty Center is Algeria's first Turkish-inspired beauty center. We brought authentic techniques from Istanbul — world-renowned for their excellence and precision — to the heart of Algiers." data-ar="WOW Hair Beauty Center, Cezayir'in Türk esintili ilk güzellik merkezidir. İstanbul'dan gelen, dünyaca üstünlük ve hassasiyetleriyle bilinen özgün teknikleri Cezayir'in kalbine taşıdık.">WOW Hair Beauty Center est le premier centre de beauté d'inspiration turque en Algérie. Nous avons apporté au cœur d'Alger des techniques authentiques venues d'Istanbul, reconnues mondialement pour leur excellence et leur précision.</p>
+    <p class="about-body rev d4" data-fr="Chaque prestation est réalisée avec des produits professionnels haut de gamme dans un espace conçu pour votre bien-être. Chez WOW, vous ne venez pas juste pour un soin — vous vivez une expérience." data-en="Every treatment uses premium professional products in a space designed for your well-being. At WOW, you don't just come for a treatment — you live an experience." data-ar="Her hizmet, iyi hissetmeniz için tasarlanmış bir ortamda üst segment profesyonel ürünlerle uygulanır. WOW'da sadece bir bakım almazsınız; özel bir deneyim yaşarsınız.">Chaque prestation est réalisée avec des produits professionnels haut de gamme dans un espace conçu pour votre bien-être. Chez WOW, vous ne venez pas juste pour un soin — vous vivez une expérience.</p>
+    <div class="about-flags rev d5"><span>🇹🇷 Savoir-faire turc</span><span style="margin:0 10px;color:var(--gold)">✦</span><span>🇩🇿 Excellence algérienne</span></div>
+    <div class="rev d5" style="margin-top:28px">
+     <button class="btn btn-g" onclick="openBook(null)" data-fr="Prendre Rendez-vous" data-en="Book Now" data-ar="Randevu Al">Prendre Rendez-vous</button>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- ============================================================
+     SERVICES SECTION
+     ============================================================ -->
+<section id="services">
+ <div class="container">
+  <div class="sec-hd">
+   <span class="lbl rev" data-fr="Ce Que Nous Offrons" data-en="What We Offer" data-ar="Sunduğumuz Hizmetler">Ce Que Nous Offrons</span>
+   <div class="gold-bar c rev d1"></div>
+   <h2 class="h-lg rev d2" data-fr="Nos Services" data-en="Our Services" data-ar="Hizmetlerimiz">Nos Services</h2>
+  </div>
+  <div class="svc-grid">
+
+   <!-- ── SERVICE 1 : Coiffure ── -->
+   <div class="svc-card rev" onclick="openSvc('coiffure')">
+    <div class="svc-img-wrap">
+     <!--
+     ╔══════════════════════════════════════════╗
+     ║  SERVICE IMAGE — Coiffure & Brushing    ║
+     ║  Recommended size : 500 × 340 px        ║
+     ║  Replace  YOUR_COIFFURE_IMAGE_SRC       ║
+     ╚══════════════════════════════════════════╝
+     -->
+     <img src="Coiffure & Brushing.jpeg" alt="Coiffure & Brushing — WOW">
+    </div>
+    <div class="svc-body">
+     <div class="svc-icon"><i class="fa-solid fa-scissors"></i></div>
+     <span class="svc-name" data-fr="Coiffure & Brushing" data-en="Hair & Blowdry" data-ar="Saç Kesimi & Fön">Coiffure & Brushing</span>
+     <span class="svc-en" data-fr="Coiffure & Brushing" data-en="Hair & Blowdry" data-ar="Saç & Fön">Hair & Blowdry</span>
+     <p class="svc-desc" data-fr="Coupe, mise en forme et brushing professionnel à la turque — volume exceptionnel garanti." data-en="Cut, styling and professional Turkish-style blowdry — exceptional volume guaranteed." data-ar="Türk stilinde profesyonel kesim, şekillendirme ve fön — olağanüstü hacim garantisi.">Coupe, mise en forme et brushing professionnel à la turque — volume exceptionnel garanti.</p>
+    </div>
+    <div class="svc-foot">
+     <button class="svc-lnk" onclick="event.stopPropagation();openSvc('coiffure')" data-fr="En savoir plus →" data-en="Learn more →" data-ar="Daha Fazla Bilgi →">En savoir plus →</button>
+     <button class="btn btn-g btn-sm" onclick="event.stopPropagation();openBook('Coiffure & Brushing')" data-fr="Réserver" data-en="Book" data-ar="Randevu Al">Réserver</button>
+    </div>
+   </div>
+
+   <!-- ── SERVICE 2 : Coloration ── -->
+   <div class="svc-card rev d1" onclick="openSvc('coloration')">
+    <div class="svc-img-wrap">
+  
+     <img src="about.jpeg" alt="Coloration & Balayage — WOW">
+    </div>
+    <div class="svc-body">
+     <div class="svc-icon"><i class="fa-solid fa-paint-brush"></i></div>
+     <span class="svc-name" data-fr="Coloration & Balayage" data-en="Color & Highlights" data-ar="Renklendirme & Balyaj">Coloration & Balayage</span>
+     <span class="svc-en" data-fr="Coloration & Balayage" data-en="Color & Highlights" data-ar="Renk & Işıltı">Color & Highlights</span>
+     <p class="svc-desc" data-fr="Balayage, ombré et coloration avec des techniques turques modernes pour un résultat lumineux naturel." data-en="Balayage, ombré and color with modern Turkish techniques for a natural luminous result." data-ar="Doğal ve ışıltılı bir görünüm için modern Türk teknikleriyle balyaj, ombré ve renklendirme.">Balayage, ombré et coloration avec des techniques turques modernes pour un résultat lumineux naturel.</p>
+    </div>
+    <div class="svc-foot">
+     <button class="svc-lnk" onclick="event.stopPropagation();openSvc('coloration')" data-fr="En savoir plus →" data-en="Learn more →" data-ar="Daha Fazla Bilgi →">En savoir plus →</button>
+     <button class="btn btn-g btn-sm" onclick="event.stopPropagation();openBook('Coloration & Balayage')" data-fr="Réserver" data-en="Book" data-ar="Randevu Al">Réserver</button>
+    </div>
+   </div>
+
+   <!-- ── SERVICE 3 : Soin Visage ── -->
+   <div class="svc-card rev d2" onclick="openSvc('soin')">
+    <div class="svc-img-wrap">
+    
+     <img src="Soin Visage & Esthétique.jpeg" alt="Soin Visage — WOW">
+    </div>
+    <div class="svc-body">
+     <div class="svc-icon"><i class="fa-solid fa-spa"></i></div>
+     <span class="svc-name" data-fr="Soin Visage & Esthétique" data-en="Facial & Skin Care" data-ar="Yüz Bakımı & Estetik">Soin Visage & Esthétique</span>
+     <span class="svc-en" data-fr="Soin Visage & Esthétique" data-en="Facial & Skin Care" data-ar="Yüz & Cilt Bakımı">Facial & Skin Care</span>
+     <p class="svc-desc" data-fr="Soins inspirés des rituels de beauté ottomans avec des produits cosmétiques haut de gamme." data-en="Treatments inspired by Ottoman beauty rituals with premium cosmetic products." data-ar="Osmanlı güzellik ritüellerinden ilham alan, üst düzey kozmetiklerle uygulanan bakım deneyimi.">Soins inspirés des rituels de beauté ottomans avec des produits cosmétiques haut de gamme.</p>
+    </div>
+    <div class="svc-foot">
+     <button class="svc-lnk" onclick="event.stopPropagation();openSvc('soin')" data-fr="En savoir plus →" data-en="Learn more →" data-ar="Daha Fazla Bilgi →">En savoir plus →</button>
+     <button class="btn btn-g btn-sm" onclick="event.stopPropagation();openBook('Soin Visage & Esthétique')" data-fr="Réserver" data-en="Book" data-ar="Randevu Al">Réserver</button>
+    </div>
+   </div>
+
+   <!-- ── SERVICE 4 : Manucure ── -->
+   <div class="svc-card rev d3" onclick="openSvc('manucure')">
+    <div class="svc-img-wrap">
+     <!--
+     ╔══════════════════════════════════════════╗
+     ║  SERVICE IMAGE — Manucure & Pédicure    ║
+     ║  Recommended size : 500 × 340 px        ║
+     ║  Replace  YOUR_MANUCURE_IMAGE_SRC       ║
+     ╚══════════════════════════════════════════╝
+     -->
+     <img src="Manucure & Pédicure.jpeg" alt="Manucure & Pédicure — WOW">
+    </div>
+    <div class="svc-body">
+     <div class="svc-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+     <span class="svc-name" data-fr="Manucure & Pédicure" data-en="Manicure & Pedicure" data-ar="Manikür & Pedikür">Manucure & Pédicure</span>
+     <span class="svc-en" data-fr="Manucure & Pédicure" data-en="Manicure & Pedicure" data-ar="Manikür & Pedikür">Manicure & Pedicure</span>
+     <p class="svc-desc" data-fr="Nail art premium, pose de gel et French manucure — vos ongles méritent le meilleur." data-en="Premium nail art, gel application and French manicure — your nails deserve the best." data-ar="Premium nail art, jel uygulaması ve French manikür — tırnaklarınız en iyisini hak ediyor.">Nail art premium, pose de gel et French manucure — vos ongles méritent le meilleur.</p>
+    </div>
+    <div class="svc-foot">
+     <button class="svc-lnk" onclick="event.stopPropagation();openSvc('manucure')" data-fr="En savoir plus →" data-en="Learn more →" data-ar="Daha Fazla Bilgi →">En savoir plus →</button>
+     <button class="btn btn-g btn-sm" onclick="event.stopPropagation();openBook('Manucure & Pédicure')" data-fr="Réserver" data-en="Book" data-ar="Randevu Al">Réserver</button>
+    </div>
+   </div>
+
+
+   <!-- ── SERVICE 6 : Maquillage ── -->
+   <div class="svc-card rev d5" onclick="openSvc('maquillage')">
+    <div class="svc-img-wrap">
+     <!--
+     ╔══════════════════════════════════════════╗
+     ║  SERVICE IMAGE — Maquillage & Mariée    ║
+     ║  Recommended size : 500 × 340 px        ║
+     ║  Replace  YOUR_MAQUILLAGE_IMAGE_SRC     ║
+     ╚══════════════════════════════════════════╝
+     -->
+     <img src="makeup.jpeg" alt="Maquillage & Mariée — WOW">
+    </div>
+    <div class="svc-body">
+     <div class="svc-icon"><i class="fa-solid fa-crown"></i></div>
+     <span class="svc-name" data-fr="Maquillage & Mariée" data-en="Makeup & Bridal" data-ar="Makyaj & Gelin">Maquillage & Mariée</span>
+     <span class="svc-en" data-fr="Maquillage & Mariée" data-en="Makeup & Bridal" data-ar="Makyaj & Gelin">Makeup & Bridal</span>
+     <p class="svc-desc" data-fr="Maquillage de mariée et de soirée exceptionnel — élégance française, âme ottomane, chaleur algérienne." data-en="Exceptional bridal and evening makeup — French elegance, Ottoman soul, Algerian warmth." data-ar="Gelin ve gece makyajında eşsiz dokunuş — Fransız zarafeti, Osmanlı ruhu, Cezayir sıcaklığı.">Maquillage de mariée et de soirée exceptionnel — élégance française, âme ottomane, chaleur algérienne.</p>
+    </div>
+    <div class="svc-foot">
+     <button class="svc-lnk" onclick="event.stopPropagation();openSvc('maquillage')" data-fr="En savoir plus →" data-en="Learn more →" data-ar="Daha Fazla Bilgi →">En savoir plus →</button>
+     <button class="btn btn-g btn-sm" onclick="event.stopPropagation();openBook('Maquillage & Mariée')" data-fr="Réserver" data-en="Book" data-ar="Randevu Al">Réserver</button>
+    </div>
+   </div>
+
+  </div>
+  <div class="price-note rev">
+   <i class="fa-solid fa-info-circle" style="color:var(--gold);margin-right:6px"></i>
+   <span data-fr="Tarifs indicatifs — Contactez-nous pour un devis personnalisé" data-en="Indicative prices — Contact us for a custom quote" data-ar="Gösterge fiyatlardır — kişisel teklif için bize ulaşın">Tarifs indicatifs — Contactez-nous pour un devis personnalisé</span>
+  </div>
+ </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+ <div class="container">
+  <div class="sec-hd">
+   <span class="lbl rev" data-fr="Pourquoi Choisir WOW" data-en="Why Choose WOW" data-ar="Neden WOW">Pourquoi Choisir WOW</span>
+   <div class="gold-bar c rev d1"></div>
+   <h2 class="h-lg rev d2" data-fr="L'Excellence Turque à Alger" data-en="Turkish Excellence in Algiers" data-ar="Cezayir'de Türk Mükemmelliği">L'Excellence Turque à Alger</h2>
+  </div>
+  <div class="stats-g">
+   <div class="stat-c rev d1"><div class="stat-ico"><i class="fa-solid fa-medal"></i></div><div class="stat-n">10+</div><span class="stat-lf" data-fr="Années d'Expertise" data-en="Years of Expertise" data-ar="Yılların Uzmanlığı">Années d'Expertise</span><span class="stat-le" data-fr="Savoir-faire turc" data-en="Turkish know-how" data-ar="Türk ustalığı">Savoir-faire turc</span></div>
+   <div class="stat-c rev d2"><div class="stat-ico"><i class="fa-solid fa-leaf"></i></div><div class="stat-n">100%</div><span class="stat-lf" data-fr="Produits Premium" data-en="Premium Products" data-ar="Premium Ürünler">Produits Premium</span><span class="stat-le" data-fr="Certifiés & bio" data-en="Certified & organic" data-ar="Sertifikalı & organik">Certifiés & bio</span></div>
+   <div class="stat-c rev d3"><div class="stat-ico"><i class="fa-solid fa-clock"></i></div><div class="stat-n">24/7</div><span class="stat-lf" data-fr="Service Client" data-en="Customer Service" data-ar="Müşteri Hizmetleri">Service Client</span><span class="stat-le" data-fr="Disponible 7j/7" data-en="Available 7 days/week" data-ar="Haftanın 7 günü hizmet">Disponible 7j/7</span></div>
+   <div class="stat-c rev d4"><div class="stat-ico"><i class="fa-solid fa-face-smile"></i></div><div class="stat-n">98%</div><span class="stat-lf" data-fr="Clients Satisfaits" data-en="Satisfied Clients" data-ar="Memnun Müşteriler">Clients Satisfaits</span><span class="stat-le" data-fr="Taux de recommandation" data-en="Recommendation rate" data-ar="Tavsiye oranı">Taux de recommandation</span></div>
+  </div>
+ </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testi">
+ <div class="container">
+  <div class="sec-hd">
+   <span class="lbl rev" data-fr="Ils Parlent De Nous" data-en="They Talk About Us" data-ar="Onlar Bizden Bahsediyor">Ils Parlent De Nous</span>
+   <div class="gold-bar c rev d1"></div>
+   <h2 class="h-lg rev d2" data-fr="Ce Que Disent Nos Clients" data-en="What Our Clients Say" data-ar="Müşterilerimiz Ne Diyor">Ce Que Disent Nos Clients</h2>
+  </div>
+  <div class="testi-g">
+   <div class="testi-c rev d1"><span class="qmark">"</span><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><p class="testi-tx" data-fr="La meilleure expérience beauté à Alger ! Des soins incroyables et une équipe aux petits soins." data-en="The best beauty experience in Algiers! Incredible treatments and a caring team." data-ar="Cezayir'deki en iyi güzellik deneyimi! İnanılmaz bakımlar ve çok ilgili bir ekip.">La meilleure expérience beauté à Alger ! Des soins incroyables et une équipe aux petits soins.</p><div class="testi-au"><div class="au-av">S</div><div><div class="au-name">Sarah M.</div><div class="au-lbl" data-fr="Client fidèle" data-en="Regular client" data-ar="Düzenli müşteri">Client fidèle</div></div></div></div>
+   <div class="testi-c rev d2"><span class="qmark">"</span><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><p class="testi-tx" data-fr="Un résultat époustouflant pour mon balayage ! Je recommande vivement." data-en="Stunning result for my balayage! I highly recommend." data-ar="Balyajım için muhteşem bir sonuç! Kesinlikle tavsiye ederim.">Un résultat époustouflant pour mon balayage ! Je recommande vivement.</p><div class="testi-au"><div class="au-av">L</div><div><div class="au-name">Leïla K.</div><div class="au-lbl" data-fr="Balayage" data-en="Balayage" data-ar="Balyaj">Balayage</div></div></div></div>
+   <div class="testi-c rev d3"><span class="qmark">"</span><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><p class="testi-tx" data-fr="Un accueil chaleureux et des professionnelles au top. Ma nouvelle adresse préférée !" data-en="A warm welcome and top professionals. My new favorite spot!" data-ar="Sıcak bir karşılama ve harika profesyoneller. Yeni favori adresim!">Un accueil chaleureux et des professionnelles au top. Ma nouvelle adresse préférée !</p><div class="testi-au"><div class="au-av">A</div><div><div class="au-name">Amira B.</div><div class="au-lbl" data-fr="Manucure" data-en="Manicure" data-ar="Manikür">Manucure</div></div></div></div>
+  </div>
+ </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+ <div class="container">
+  <div class="sec-hd">
+   <span class="lbl rev" data-fr="Contactez-Nous" data-en="Contact Us" data-ar="Bize Ulaşın">Contactez-Nous</span>
+   <div class="gold-bar c rev d1"></div>
+   <h2 class="h-lg rev d2" data-fr="Prenez Rendez-Vous" data-en="Book an Appointment" data-ar="Randevu Alın">Prenez Rendez-Vous</h2>
+  </div>
+  <div class="contact-g">
+   <form id="contactForm" class="rev d1" onsubmit="submitForm(event)">
+    <label class="flbl" data-fr="Nom Complet" data-en="Full Name" data-ar="Ad Soyad">Nom Complet</label>
+    <input type="text" class="finp" id="contactName" required>
+    <label class="flbl" data-fr="Téléphone" data-en="Phone" data-ar="Telefon">Téléphone</label>
+    <input type="tel" class="finp" id="contactPhone" required>
+    <label class="flbl" data-fr="Email" data-en="Email" data-ar="E-posta">Email</label>
+    <input type="email" class="finp" id="contactEmail" required>
+    <label class="flbl" data-fr="Service Souhaité" data-en="Desired Service" data-ar="İstenen Hizmet">Service Souhaité</label>
+    <select class="fsel" id="contactService"><option>Coiffure & Brushing</option><option>Coloration & Balayage</option><option>Soin Visage & Esthétique</option><option>Manucure & Pédicure</option><option>Pose de Cils & Sourcils</option><option>Maquillage & Mariée</option></select>
+    <label class="flbl" data-fr="Message" data-en="Message" data-ar="Mesaj">Message</label>
+    <textarea class="ftxt" id="contactMsg" rows="4"></textarea>
+    <button type="submit" class="btn btn-g" data-fr="Envoyer →" data-en="Send →" data-ar="Gönder →">Envoyer →</button>
+   </form>
+   <div class="ci-blk rev d2">
+    <div class="ci-title">WOW Beauty Center</div>
+    <div class="ci-sub" data-fr="Retrouvez-nous à Tixeraïne, Alger" data-en="Find us in Tixeraïne, Algiers" data-ar="Bizi Tixeraïne, Cezayir'de bulun">Retrouvez-nous à Tixeraïne, Alger</div>
+    <div class="c-item"><div class="c-ico"><i class="fa-solid fa-location-dot"></i></div><div><div class="c-lbl" data-fr="Adresse" data-en="Address" data-ar="Adres">Adresse</div><div class="c-val">Tixeraïne, Alger, Algérie</div></div></div>
+    <div class="c-item"><div class="c-ico"><i class="fa-solid fa-phone"></i></div><div><div class="c-lbl" data-fr="Téléphone" data-en="Phone" data-ar="Telefon">Téléphone</div><div class="c-val"><a href="tel:+213555123456">+213 555 12 34 56</a> / <a href="tel:+213770123456">+213 770 12 34 56</a></div></div></div>
+    <div class="c-item"><div class="c-ico"><i class="fa-regular fa-envelope"></i></div><div><div class="c-lbl" data-fr="Email" data-en="Email" data-ar="E-posta">Email</div><div class="c-val"><a href="mailto:contact@wowbeauty.dz">contact@wowbeauty.dz</a></div></div></div>
+    <button class="btn-wa" onclick="window.open('https://wa.me/213555123456?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous','_blank')"><i class="fa-brands fa-whatsapp"></i><span data-fr="Réserver par WhatsApp" data-en="Book via WhatsApp" data-ar="WhatsApp ile Randevu Al">Réserver par WhatsApp</span></button>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="map">
+ <div class="container">
+  <p class="map-cap" data-fr="Notre emplacement à Alger" data-en="Our location in Algiers" data-ar="Cezayir'deki konumumuz">Notre emplacement à Alger</p>
+  <div class="map-w">
+ 
+ <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.123456789!2d3.0364521!3d36.7231312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fad6cf5d57d59%3A0x25ad3add6f718d0e!2sWow%20Hair%20Beauty%20Center%20Alg%C3%A9rie!5e0!3m2!1sen!2sdz!4v1743190000000!5m2!1sen!2sdz"
+  width="100%"
+  height="420"
+  style="border:0;border-radius:12px;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  title="WOW Hair Beauty Center — Alger">
+</iframe>
+  </div>
+ </div>
+</section>
+
+<!-- ============================================================
+     FOOTER  ✅ Real Instagram link updated
+     ============================================================ -->
+<footer>
+ <div class="container">
+  <div class="foot-g">
+   <div>
+    <a href="#hero" class="flogo">W<span>O</span>W <span style="font-weight:300">Hair</span></a>
+    <p class="ftagline" data-fr="Le premier centre de beauté turc en Algérie. L'excellence à votre service." data-en="The first Turkish beauty center in Algeria. Excellence at your service." data-ar="Cezayir'deki ilk Türk güzellik merkezi. Hizmetinizde mükemmellik.">Le premier centre de beauté turc en Algérie. L'excellence à votre service.</p>
+    <div class="fsoc">
+     <!--
+     ✅ Instagram link — real account URL from the link you provided
+     -->
+     <a href="https://www.instagram.com/wow.hair.beauty.center.algeria?igsh=MWQzc3NqY250dWFzaA==" target="_blank" rel="noopener noreferrer" class="sl"><i class="fa-brands fa-instagram"></i></a>
+     <!-- Facebook — replace # with your real Facebook page URL -->
+     <a href="#" class="sl"><i class="fa-brands fa-facebook-f"></i></a>
+     <!-- TikTok — replace # with your real TikTok URL -->
+     <a href="#" class="sl"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+   </div>
+   <div class="fc"><h4 data-fr="Navigation" data-en="Navigation" data-ar="Menü">Navigation</h4><ul class="flinks"><li><a href="#hero" data-fr="Accueil" data-en="Home" data-ar="Ana Sayfa">Accueil</a></li><li><a href="#services" data-fr="Services" data-en="Services" data-ar="Hizmetler">Services</a></li><li><a href="#about" data-fr="À Propos" data-en="About" data-ar="Hakkımızda">À Propos</a></li><li><a href="#contact" data-fr="Contact" data-en="Contact" data-ar="İletişim">Contact</a></li></ul></div>
+   <div class="fc"><h4 data-fr="Horaires" data-en="Opening Hours" data-ar="Çalışma Saatleri">Horaires</h4><ul class="flinks"><li><span data-fr="Lundi - Samedi" data-en="Monday - Saturday" data-ar="Pazartesi - Cumartesi">Lundi - Samedi</span><span>10:00 – 20:00</span></li><li><span data-fr="Dimanche" data-en="Sunday" data-ar="Pazar">Dimanche</span><span>11:00 – 18:00</span></li></ul></div>
+   <div class="fc"><h4 data-fr="Contact Rapide" data-en="Quick Contact" data-ar="Hızlı İletişim">Contact Rapide</h4><ul class="flinks"><li><i class="fa-solid fa-phone"></i> <a href="tel:+213555123456">+213 555 12 34 56</a></li><li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/213555123456">WhatsApp</a></li><li><i class="fa-regular fa-envelope"></i> <a href="mailto:contact@wowbeauty.dz">contact@wowbeauty.dz</a></li></ul></div>
+  </div>
+  <div class="fbot"><span>© 2025 WOW Hair Beauty Center Algeria.</span><span data-fr="Tous droits réservés." data-en="All rights reserved." data-ar="Tüm hakları saklıdır.">Tous droits réservés.</span><span>Conçu avec <i class="fa-solid fa-heart heart"></i> pour la beauté</span></div>
+ </div>
+</footer>
+
+<a href="https://wa.me/213555123456?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous" class="fab" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+<!-- MODALS -->
+<div id="modalOverlay" class="modal-ov" onclick="closeModal(event)"><div class="modal-box" onclick="event.stopPropagation()"><div class="modal-hd"><div><div class="modal-title" id="modalTitle">Réserver</div><div class="modal-sub" id="modalSub">Choisissez votre prestation</div></div><button class="modal-x" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button></div><div class="modal-bd" id="modalBody"></div></div></div>
+<div id="svcModal" class="modal-ov" onclick="closeSvcModal(event)"><div class="modal-box" onclick="event.stopPropagation()"><div class="modal-hd"><div><div class="modal-title" id="svcModalTitle">Détails du service</div><div class="modal-sub" id="svcModalSub">Informations et tarifs</div></div><button class="modal-x" onclick="closeSvcModal()"><i class="fa-solid fa-xmark"></i></button></div><div class="modal-bd" id="svcModalBody"></div></div></div>
+<div id="toastMsg" class="toast"><i class="fa-solid fa-circle-check"></i><span id="toastText">Message envoyé !</span></div>
+<script>
+let currentLang = 'fr';
+const translations = {fr:{},en:{},tr:{}};
+document.querySelectorAll('[data-fr]').forEach(el=>{['fr','en','tr'].forEach(l=>{if(el.dataset[l])translations[l][el.getAttribute(`data-${l}`)]=el.innerHTML;})});
+function setLang(lang){currentLang=lang;document.querySelectorAll('[data-fr]').forEach(el=>{if(el.dataset[lang])el.innerHTML=el.dataset[lang];});document.querySelectorAll('.lb').forEach(btn=>btn.classList.remove('on'));document.getElementById(`b${lang.charAt(0).toUpperCase()+lang.slice(1)}`).classList.add('on');}
+setLang('fr');
+function toggleTheme(){document.body.classList.toggle('light-mode');}
+function togMob(){document.getElementById('mob').classList.toggle('open');}
+function openBook(service){document.getElementById('modalTitle').innerHTML=service?`Réserver : ${service}`:'Réserver une prestation';document.getElementById('modalSub').innerHTML=service?'Confirmez votre choix':'Choisissez votre prestation';let html=`<div class="modal-svc-hl"><i class="fa-regular fa-calendar-check"></i><div><div class="modal-sn">${service||'Service personnalisé'}</div><div class="modal-sp">Durée variable</div></div></div><div class="modal-opts"><div class="mopt" onclick="selectOpt(this,'WhatsApp')"><i class="fa-brands fa-whatsapp"></i><div class="mopt-l">WhatsApp</div><div class="mopt-s">Rapide & simple</div></div><div class="mopt" onclick="selectOpt(this,'Appel')"><i class="fa-solid fa-phone"></i><div class="mopt-l">Appel</div><div class="mopt-s">Parler à un conseiller</div></div></div><div class="mdiv"><span>OU</span></div><button class="mwa" onclick="bookViaWhatsApp('${service}')"><i class="fa-brands fa-whatsapp"></i> Réserver via WhatsApp</button><button class="mph" onclick="window.location.href='tel:+213555123456'"><i class="fa-solid fa-phone"></i> Appeler maintenant</button>`;document.getElementById('modalBody').innerHTML=html;document.getElementById('modalOverlay').classList.add('open');}
+function selectOpt(el,type){document.querySelectorAll('.mopt').forEach(opt=>opt.classList.remove('sel'));el.classList.add('sel');}
+function bookViaWhatsApp(service){let msg=`Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous${service?`%20pour%20${encodeURIComponent(service)}`:''}.`;window.open(`https://wa.me/213555123456?text=${msg}`,'_blank');}
+function closeModal(e){if(!e||e.target===document.getElementById('modalOverlay'))document.getElementById('modalOverlay').classList.remove('open');}
+function openSvc(svcId){let titles={coiffure:'Coiffure & Brushing',coloration:'Coloration & Balayage',soin:'Soin Visage & Esthétique',manucure:'Manucure & Pédicure',cils:'Pose de Cils & Sourcils',maquillage:'Maquillage & Mariée'};let descs={coiffure:'Coupe, mise en forme et brushing professionnel à la turque. Nos coiffeurs experts utilisent des techniques venues d’Istanbul pour un volume et une texture exceptionnels.',coloration:'Balayage, ombré et coloration avec des techniques turques modernes. Résultats lumineux et naturels garantis.',soin:'Soins inspirés des rituels de beauté ottomans avec des produits cosmétiques haut de gamme. Hydratation intense et éclat immédiat.',manucure:'Nail art premium, pose de gel et French manucure. Tous les soins pour des ongles parfaits.',cils:'Extensions de cils volume russe, lash lift et design de sourcils. Un regard intensifié et élégant.',maquillage:'Maquillage de mariée et de soirée exceptionnel. Élégance française, âme ottomane, chaleur algérienne.'};let prices={coiffure:'À partir de 3 500 DA',coloration:'À partir de 7 000 DA',soin:'À partir de 4 500 DA',manucure:'À partir de 2 500 DA',cils:'À partir de 4 500 DA',maquillage:'À partir de 5 000 DA'};document.getElementById('svcModalTitle').innerHTML=titles[svcId];document.getElementById('svcModalSub').innerHTML='Détails et tarifs';let html=`<div class="svc-modal-ph"><i class="fa-solid fa-${svcId==='coiffure'?'scissors':svcId==='coloration'?'paint-brush':svcId==='soin'?'spa':svcId==='manucure'?'hand-sparkles':svcId==='cils'?'eye':'crown'}"></i></div><div style="padding:20px 0 10px"><p>${descs[svcId]}</p><div class="svc-prow"><span class="svc-pon">Durée approximative</span><span class="svc-pov">45-120 min</span></div><div class="svc-prow"><span class="svc-pon">Tarif indicatif</span><span class="svc-pov">${prices[svcId]}</span></div><div class="svc-prow"><span class="svc-pon">Forfaits</span><span class="svc-pov">Sur devis</span></div><div style="margin-top:28px;display:flex;gap:12px"><button class="btn btn-g" style="flex:1" onclick="closeSvcModal();openBook('${titles[svcId]}')">Réserver ce service</button><button class="btn btn-o" style="flex:1" onclick="closeSvcModal()">Fermer</button></div></div>`;document.getElementById('svcModalBody').innerHTML=html;document.getElementById('svcModal').classList.add('open');}
+function closeSvcModal(e){if(!e||e.target===document.getElementById('svcModal'))document.getElementById('svcModal').classList.remove('open');}
+function submitForm(e){e.preventDefault();let name=document.getElementById('contactName').value;let phone=document.getElementById('contactPhone').value;let email=document.getElementById('contactEmail').value;let service=document.getElementById('contactService').value;let msg=document.getElementById('contactMsg').value;let body=`Nouveau message de ${name}%0ATéléphone: ${phone}%0AEmail: ${email}%0AService: ${service}%0AMessage: ${msg}`;window.open(`https://wa.me/213555123456?text=${body}`,'_blank');showToast('Demande envoyée !');document.getElementById('contactForm').reset();}
+function showToast(msg){let toast=document.getElementById('toastMsg');document.getElementById('toastText').innerText=msg;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),3000);}
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('sc',window.scrollY>50);});
+const revElements=document.querySelectorAll('.rev');const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('in');observer.unobserve(entry.target);}});},{threshold:0.1});revElements.forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
